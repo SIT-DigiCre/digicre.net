@@ -16,12 +16,15 @@ updates:
     labels:
       - "dependencies"
       - "automated"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   # Enable version updates for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
       day: "monday"
       time: "09:00"
       timezone: "Asia/Tokyo"
@@ -32,3 +35,6 @@ updates:
     labels:
       - "ci"
       - "automated"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
