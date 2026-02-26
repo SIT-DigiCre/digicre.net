@@ -15,8 +15,6 @@
     "@iconify-json/simple-icons": "1.2.71",
     "@iconify/react": "6.0.2",
     "@next/third-parties": "16.1.6",
-    "@splidejs/react-splide": "0.7.12",
-    "@splidejs/splide-extension-video": "0.8.0",
     "autoprefixer": "10.4.24",
     "next": "16.1.6",
     "postcss": "8.5.6",
