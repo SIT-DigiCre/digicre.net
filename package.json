@@ -11,7 +11,7 @@
     "codecheck:fix": "biome check . --write"
   },
   "dependencies": {
-    "@iconify-json/material-symbols": "1.2.57",
+    "@iconify-json/material-symbols": "1.2.59",
     "@iconify-json/simple-icons": "1.2.71",
     "@iconify/react": "6.0.2",
     "@next/third-parties": "16.1.6",
