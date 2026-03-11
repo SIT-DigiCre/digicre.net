@@ -1,6 +1,7 @@
+import { DigicreLogo, MaterialSymbolsOpenInNew } from "@/components/Icon";
+import { NewHeader } from "@/components/NewHeader";
 import type { Metadata } from "next";
 import Markdown from "react-markdown";
-import { DigicreLogo, MaterialSymbolsOpenInNew } from "@/components/Icon";
 import Footer from "./_components/Footer";
 import Gallery from "./_components/Gallery";
 
@@ -59,6 +60,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <NewHeader></NewHeader>
       <main className="bg-sky">
         <div className="container">
           <section className="flex flex-col items-center gap-y-[32px] md:gap-y-[64px]">
