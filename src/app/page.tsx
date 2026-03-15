@@ -1,8 +1,8 @@
+import { Footer } from "@/components/Footer";
 import { DigicreLogo, MaterialSymbolsOpenInNew } from "@/components/Icon";
 import { NewHeader } from "@/components/NewHeader";
 import type { Metadata } from "next";
 import Markdown from "react-markdown";
-import Footer from "./_components/Footer";
 import Gallery from "./_components/Gallery";
 
 const contents = [

@@ -1,10 +1,9 @@
-export default function Footer() {
+export const Footer = () => {
   return (
-    <footer className="bg-[#202020] p-4 text-center text-white">
-      <small>
-        © {`2004-${new Date().getFullYear()}`} <wbr />
-        芝浦工業大学 デジクリ
+    <footer className="bg-[#202020] px-[16px] py-[64px] flex flex-col gap-y-[64px]">
+      <small className="text-[#fff] text-base mx-auto">
+        © {`2004-${new Date().getFullYear()}`} 芝浦工業大学 デジクリ
       </small>
     </footer>
   );
-}
+};

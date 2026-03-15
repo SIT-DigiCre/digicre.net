@@ -1,8 +1,8 @@
+import { Footer } from "@/components/Footer";
 import { DigicreLogo } from "@/components/Icon";
 import { NewHeader } from "@/components/NewHeader";
 import type { Metadata } from "next";
 import Link from "next/link";
-import Footer from "../_components/Footer";
 
 export const metadata: Metadata = {
   title: "プライバシーポリシー - 芝浦工業大学 デジクリ",
