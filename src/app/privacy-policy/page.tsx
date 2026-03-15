@@ -1,6 +1,7 @@
+import { DigicreLogo } from "@/components/Icon";
+import { NewHeader } from "@/components/NewHeader";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { DigicreLogo } from "@/components/Icon";
 import Footer from "../_components/Footer";
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <>
+      <NewHeader />
       <main className="bg-sky">
         <div className="container">
           <div className="flex flex-col items-center gap-y-[32px] md:gap-y-[64px]">
