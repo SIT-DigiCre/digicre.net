@@ -194,19 +194,19 @@ const _devData = [
 export async function generateStaticParams() {
   return [
     {
-      slug: "new-pg",
+      slug: "pg",
     },
     {
-      slug: "new-2dcg",
+      slug: "2dcg",
     },
     {
-      slug: "new-3dcg",
+      slug: "3dcg",
     },
     {
-      slug: "new-dtm",
+      slug: "dtm",
     },
     {
-      slug: "new-movie",
+      slug: "movie",
     },
     {
       slug: "vtuber",
