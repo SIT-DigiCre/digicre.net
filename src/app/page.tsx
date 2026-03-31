@@ -81,7 +81,7 @@ const YouTube: React.FC<YouTubeProps> = ({ videoId }) => {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerPolicy="strict-origin-when-cross-origin"
       allowFullScreen
-      className="aspect-video w-full h-auto"
+      className="aspect-video w-full h-auto max-h-[540px]"
       loading="lazy"
       title="デジクリ紹介動画"
     ></iframe>
@@ -98,11 +98,11 @@ export default function Home() {
 
         <section className="bg-sky px-[16px] md:px-[32px] py-[64px] flex flex-col gap-y-[64px]">
           <div className="text-white border-l-[0.25rem] border-[#fff] pl-[1rem]">
-            <h2 className="text-[1.75rem] font-bold">デジクリとは？</h2>
+            <h2 className="text-28-700 mb-[2rem]">デジクリとは？</h2>
 
-            <p>芝浦工業大学の文化系サークルです。</p>
+            <p className="text-20-400">芝浦工業大学の文化系サークルです。</p>
 
-            <p>
+            <p className="text-20-400">
               プログラミング、ゲーム開発、イラスト、3DCG、音楽（DTM）、動画制作、VTuberなど、幅広いジャンルでデジタルコンテンツの制作を行っています。
             </p>
           </div>
@@ -113,19 +113,19 @@ export default function Home() {
           className="bg-[#fff] px-[16px] md:px-[32px] py-[64px] flex flex-col gap-y-[64px]"
         >
           <div className="text-[#20020] border-l-[0.25rem] border-sky pl-[1rem]">
-            <h2 className="text-[1.75rem] font-bold">主な活動</h2>
+            <h2 className="text-28-700 mb-[2rem]">主な活動</h2>
 
-            <p>
+            <p className="text-20-400">
               普段は部室やDiscordのVCなどで交流したり、作品制作を行っています。
             </p>
 
-            <p>毎週月曜に定例会があります。</p>
+            <p className="text-20-400">毎週月曜に定例会があります。</p>
 
-            <p>
+            <p className="text-20-400">
               夏休みや春休み中に希望者で集まって合宿を行っています。デジクリ部員同士で交流を深めたり、色々な講座を実施してスキルアップをしたりする機会にもなっています。
             </p>
 
-            <p>
+            <p className="text-20-400">
               大宮祭や芝浦祭といった学内の文化祭への出展はもちろん、コミックマーケットやM3といった外部イベントにも数多く参加しています。
             </p>
           </div>
@@ -148,13 +148,13 @@ export default function Home() {
           className="bg-[#fff] px-[16px] md:px-[32px] py-[64px] flex flex-col gap-y-[64px]"
         >
           <div className="text-[#20020] border-l-[0.25rem] border-sky pl-[1rem]">
-            <h2 className="text-[1.75rem] font-bold">班紹介</h2>
+            <h2 className="text-28-700 mb-[2rem]">班紹介</h2>
 
-            <p>
+            <p className="text-20-400">
               デジクリにおける「班」とは、活動分野という意味合いです。大きく分けて7つ存在します。
             </p>
 
-            <p>
+            <p className="text-20-400">
               同じ班のメンバー同士で交流したり、ときには複数の班でコラボレーションして作品制作をすることもあります。
             </p>
           </div>
@@ -174,9 +174,11 @@ export default function Home() {
 
         <section className="bg-[#DFDFDF] px-[16px] md:px-[32px] py-[64px] flex flex-col gap-y-[64px]">
           <div className="text-[#202020] border-l-[0.25rem] border-[#202020] pl-[1rem]">
-            <h2 className="text-[1.75rem] font-bold">よくある質問</h2>
+            <h2 className="text-28-700 mb-[2rem]">よくある質問</h2>
 
-            <p>入部を希望される方から受ける主な質問と回答をまとめました。</p>
+            <p className="text-20-400">
+              入部を希望される方から受ける主な質問と回答をまとめました。
+            </p>
           </div>
 
           <div className="flex flex-col gap-y-[16px]">
@@ -188,11 +190,11 @@ export default function Home() {
                   key={index}
                   className="bg-white text-[#202020] border-[2px] border-[#808080] p-[16px] rounded-[16px]"
                 >
-                  <summary className="list-none text-[1.25rem] font-bold">
+                  <summary className="text-20-700 list-none">
                     質問タイトル
                   </summary>
 
-                  <p>回答</p>
+                  <p className="mt-[16px]">回答</p>
                 </details>
               ))}
           </div>
@@ -200,18 +202,18 @@ export default function Home() {
 
         <section className="bg-sky px-[16px] md:px-[32px] py-[64px] flex flex-col gap-y-[64px]">
           <div className="text-white border-l-[0.25rem] border-[#fff] pl-[1rem]">
-            <h2 className="text-[1.75rem] font-bold">
+            <h2 className="text-28-700 mb-[2rem]">
               デジクリで活動してみませんか？
             </h2>
 
-            <p>
+            <p className="text-20-400">
               入部受付フォームからメールアドレスをご登録いただくと、デジクリへの入部方法や見学案内などのメールをお送りします。
             </p>
           </div>
 
           <Link
             href="https://forms.gle/cY25Kc6fssqv2tZz9"
-            className="bg-[#fff] border-[2px] border-[#808080] text-[#202020] p-[16px] flex gap-[16px] rounded-[16px] items-center"
+            className="bg-[#fff] border-[2px] border-[#808080] text-[#202020] p-[16px] flex gap-[16px] rounded-[16px] items-center text-20-700"
             target="_blank"
             rel="noopener noreferrer"
           >

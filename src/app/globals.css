@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-black: #202020;
+  --color-digicre-skyblue: #00B0F0;
+  --color-digicre-black: #202020;
+  --color-digicre-white: #ffffff;
   --color-blue: #0c5ae9;
   --color-gray: #84929e;
   --color-sky: #00b0f0;
-  --color-white: #ffffff;
   --font-sans:
     var(--font-inter), "Helvetica Neue", "Arial", "Noto Sans JP",
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "sans-serif", ;
@@ -22,6 +23,30 @@
 }
 
 @layer utilities {
+  .text-28-700 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+
+  .text-20-700 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+
+  .text-20-400 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  .text-16-400 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
   .consider-scrollbar {
     scrollbar-gutter: stable;
   }

@@ -19,7 +19,7 @@ const Menu: React.FC<MenuProps> = ({ title, entries }) => {
 
   return (
     <nav className="flex flex-col gap-y-[32px]">
-      <p className="border-l-[4px] border-[#00b0f0] pl-[16px] text-[#fff] text-[1.75rem] font-bold">
+      <p className="border-l-[4px] border-digicre-skyblue pl-[16px] text-digicre-white text-28-700">
         {title}
       </p>
 
@@ -32,7 +32,7 @@ const Menu: React.FC<MenuProps> = ({ title, entries }) => {
               rel={
                 isExternalLink(item.href) ? "noopener noreferrer" : undefined
               }
-              className="bg-[#404040] border-[2px] border-[#808080] text-[#fff] p-[16px] flex gap-[16px] rounded-[16px] items-center"
+              className="bg-[#404040] border-[2px] border-[#808080] text-[#fff] p-[16px] flex gap-[16px] rounded-[16px] items-center text-20-700"
             >
               <span className="w-full font-bold text-[1.25rem]">
                 {item.title}
@@ -81,7 +81,7 @@ export const NewHeader = () => {
 
       <div className="max-xl:peer-not-checked:hidden fixed top-0 left-0 z-0 overscroll-none bg-[#202020] min-inline-[320px] h-full overflow-y-auto consider-scrollbar px-[16px] py-[64px] flex flex-col gap-y-[64px]">
         <Link href="/" className="mx-auto">
-          <DigicreLogo className="aspect-[176_/_48] w-full h-[64px] shrink-0 text-[#fff]" />
+          <DigicreLogo className="aspect-[176/48] w-full h-[64px] shrink-0 text-[#fff]" />
         </Link>
 
         <Menu
