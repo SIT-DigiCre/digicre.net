@@ -1,3 +1,4 @@
+import Breadcrumb from "@/components/Breadcrumb";
 import { Footer } from "@/components/Footer";
 import { NewHeader as Header } from "@/components/NewHeader";
 import type { Metadata } from "next";
@@ -30,18 +31,7 @@ export default function PrivacyPolicyPage() {
       <Header />
 
       <main className="xl:ml-[320px]">
-        <div className="bg-digicre-white flex flex-col px-[16px] md:px-[32px] py-[64px] gap-y-[64px] pt-[96px]">
-          <ol className="border-l-[0.25rem] border-digicre-skyblue pl-[1rem] flex gap-x-[1rem]">
-            {[
-              { title: "芝浦工業大学 デジクリ", href: "/" },
-              { title: "プライバシーポリシー", href: "/privacy-policy/" },
-            ].map((item, index) => (
-              <li key={index} className="text-16-400">
-                <Link href={item.href}>{item.title}</Link>
-              </li>
-            ))}
-          </ol>
-        </div>
+        <Breadcrumb />
 
         <div className="bg-digicre-skyblue text-digicre-white flex flex-col px-[16px] md:px-[32px] py-[64px] gap-y-[64px]">
           <div className="text-white border-l-[0.25rem] border-[#fff] pl-[1rem]">
