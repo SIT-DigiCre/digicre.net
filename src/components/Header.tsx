@@ -12,6 +12,9 @@ import {
   MaterialSymbolsMail,
   MaterialSymbolsMenu,
   MaterialSymbolsOpenInNew,
+  SimpleIconsGithub,
+  SimpleIconsInstagram,
+  SimpleIconsSoundcloud,
   SimpleIconsX,
   SimpleIconsYoutube,
 } from "@/components/Icon";
@@ -36,7 +39,7 @@ const navigationItems = [
     type: "toc" as const,
   },
   {
-    href: "https://forms.gle/cY25Kc6fssqv2tZz9",
+    href: "https://forms.gle/in82S9YdYDi3VXsz9",
     label: "入部受付",
     icon: MaterialSymbolsOpenInNew,
     type: "external" as const,
@@ -51,15 +54,25 @@ const socialLinks = [
     icon: SimpleIconsX,
   },
   {
+    href: "https://www.instagram.com/digicre.shibaura/",
+    label: "Instagram",
+    icon: SimpleIconsInstagram,
+  },
+  {
     href: "https://www.youtube.com/@sitdigicre",
     label: "YouTube",
     icon: SimpleIconsYoutube,
   },
-  // {
-  //   href: "https://line.me/ti/g2/UfhEOyteJRjyQLm-c9Mmhj_9wvIKCBDEohh_WQ",
-  //   label: "LINE オープンチャット",
-  //   icon: SimpleIconsLine,
-  // },
+  {
+    href: "https://soundcloud.com/sitdigicre",
+    label: "SoundCloud",
+    icon: SimpleIconsSoundcloud,
+  },
+  {
+    href: "https://github.com/SIT-DigiCre/",
+    label: "GitHub",
+    icon: SimpleIconsGithub,
+  },
   {
     href: "/",
     label: "ウェブサイト",

@@ -16,11 +16,16 @@ export default function JoinSection() {
             <strong>入部方法や見学等のご案内メール</strong>
             をお送りします。
           </p>
+
+          <p>
+            入部受付フォームは、大学の Google
+            アカウントでログインした後にアクセスできます。
+          </p>
         </div>
       </article>
 
       <Link
-        href="https://forms.gle/cY25Kc6fssqv2tZz9"
+        href="https://forms.gle/in82S9YdYDi3VXsz9"
         rel="noopener noreferrer"
         target="_blank"
         className="flex items-center justify-center gap-0 bg-[#00b0f0] p-16 text-xl leading-tight font-bold text-white transition-colors duration-300 ease-in-out [font-feature-settings:'palt'] hover:bg-[#71d9ff]"
