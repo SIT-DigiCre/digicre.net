@@ -1,6 +1,6 @@
-import { MaterialSymbolsKeyboardArrowDown } from "@/components/Icon";
 import Image from "next/image";
 import Link from "next/link";
+import { MaterialSymbolsKeyboardArrowDown } from "@/components/Icon";
 
 export default function Hero() {
   return (

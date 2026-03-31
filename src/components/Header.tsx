@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { useState } from "react";
 import {
   DigicreLogo,
   MaterialSymbolsClose,
@@ -16,8 +18,6 @@ import {
   SimpleIconsX,
   SimpleIconsYoutube,
 } from "@/components/Icon";
-import Link from "next/link";
-import { useState } from "react";
 
 const navigationItems = [
   {

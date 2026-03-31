@@ -1,5 +1,5 @@
-import { MaterialSymbolsOpenInNew } from "@/components/Icon";
 import Link from "next/link";
+import { MaterialSymbolsOpenInNew } from "@/components/Icon";
 
 export default function JoinSection() {
   return (
