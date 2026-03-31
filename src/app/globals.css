@@ -8,7 +8,7 @@
   --color-white: #ffffff;
   --font-sans:
     var(--font-inter), "Helvetica Neue", "Arial", "Noto Sans JP",
-    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "sans-serif",;
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "sans-serif", ;
 }
 
 @layer base {
@@ -22,6 +22,10 @@
 }
 
 @layer utilities {
+  .consider-scrollbar {
+    scrollbar-gutter: stable;
+  }
+
   .container {
     @apply mx-auto flex max-w-[1280px] flex-col gap-y-[64px] px-[16px] py-[64px] md:gap-y-[128px] md:px-[64px] md:py-[128px] xl:gap-y-[128px] xl:px-[96px] xl:py-[128px];
   }
@@ -82,7 +86,7 @@
     @apply flex min-h-screen flex-col lg:ml-[25%];
   }
 
-  .body > main {
+  .body>main {
     @apply flex-grow;
   }
 }
