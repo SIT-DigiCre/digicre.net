@@ -1,6 +1,6 @@
+import { MaterialSymbolsKeyboardArrowDown } from "@/components/Icon";
 import Image from "next/image";
 import Link from "next/link";
-import { MaterialSymbolsKeyboardArrowDown } from "@/components/Icon";
 
 export default function Hero() {
   return (
@@ -8,7 +8,7 @@ export default function Hero() {
       <iframe
         width={320}
         height={240}
-        src="https://www.youtube-nocookie.com/embed/nnJ5ml6D2UE?autoplay=1&mute=1&modestbranding=1&playsinline=1&disablekb=1&loop=1&controls=0&end=57&playlist=nnJ5ml6D2UE"
+        src="https://www.youtube-nocookie.com/embed/vM_Dmc5WLxs?autoplay=1&mute=1&modestbranding=1&playsinline=1&disablekb=1&loop=1&controls=0&end=57&playlist=vM_Dmc5WLxs"
         className="absolute inset-0 h-full w-full bg-black object-cover text-white"
         loading="lazy"
         title="デジクリ紹介動画"
@@ -17,7 +17,7 @@ export default function Hero() {
 
       <noscript>
         <Image
-          src="https://img.youtube.com/vi/nnJ5ml6D2UE/maxresdefault.jpg"
+          src="https://img.youtube.com/vi/vM_Dmc5WLxs/maxresdefault.jpg"
           alt="デジクリ紹介動画"
           width={320}
           height={180}
