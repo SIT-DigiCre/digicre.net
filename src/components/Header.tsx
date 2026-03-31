@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-import { useState } from "react";
 import {
   DigicreLogo,
   MaterialSymbolsClose,
@@ -15,6 +13,8 @@ import {
   SimpleIconsX,
   SimpleIconsYoutube,
 } from "@/components/Icon";
+import Link from "next/link";
+import { useState } from "react";
 
 const navigationItems = [
   {
@@ -36,7 +36,7 @@ const navigationItems = [
     type: "toc" as const,
   },
   {
-    href: "https://forms.gle/cY25Kc6fssqv2tZz9",
+    href: "https://forms.gle/in82S9YdYDi3VXsz9",
     label: "入部受付",
     icon: MaterialSymbolsOpenInNew,
     type: "external" as const,
