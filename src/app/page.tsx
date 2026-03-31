@@ -1,5 +1,5 @@
 import { Footer } from "@/components/Footer";
-import { NewHeader } from "@/components/NewHeader";
+import { NewHeader as Header } from "@/components/NewHeader";
 import { Icon } from "@iconify/react";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -91,7 +91,7 @@ const YouTube: React.FC<YouTubeProps> = ({ videoId }) => {
 export default function Home() {
   return (
     <>
-      <NewHeader />
+      <Header />
 
       <main className="xl:ml-[320px]">
         <YouTube videoId="vM_Dmc5WLxs" />
@@ -161,14 +161,52 @@ export default function Home() {
 
           {/* ダミー */}
           <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-[16px]">
-            {Array(7)
-              .fill(null)
-              .map((_, index) => (
-                <li
-                  key={index}
-                  className="aspect-square bg-[#202020] border-[2px] border-[#808080] rounded-[16px]"
-                ></li>
-              ))}
+            {[
+              {
+                slug: "pg",
+                title: "PG班",
+              },
+              {
+                slug: "2dcg",
+                title: "イラスト班",
+              },
+              {
+                slug: "3dcg",
+                title: "3DCG班",
+              },
+              {
+                slug: "dtm",
+                title: "DTM班",
+              },
+              {
+                slug: "movie",
+                title: "Movie班",
+              },
+              {
+                slug: "vtuber",
+                title: "VTuber班",
+              },
+              {
+                slug: "writing",
+                title: "文字書き班",
+              },
+            ].map((item, index) => (
+              <li
+                key={index}
+                className="aspect-square bg-[#202020] text-digicre-white border-[2px] border-[#808080] rounded-[16px] overflow-hidden"
+              >
+                <Link
+                  href={`/about/${item.slug}/`}
+                  className="bg-digicre-black/75 text-digicre-white p-[16px] flex gap-[16px] items-center"
+                >
+                  <span className="w-full text-20-700">{item.title}</span>
+                  <Icon
+                    icon="material-symbols:open-in-new-rounded"
+                    className="text-[2rem]"
+                  />
+                </Link>
+              </li>
+            ))}
           </ul>
         </section>
 
@@ -219,7 +257,7 @@ export default function Home() {
           >
             <span className="w-full font-bold">入部受付フォーム</span>
             <Icon
-              icon={"material-symbols:open-in-new-rounded"}
+              icon="material-symbols:open-in-new-rounded"
               className="text-[2rem]"
             />
           </Link>

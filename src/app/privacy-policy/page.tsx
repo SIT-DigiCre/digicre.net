@@ -1,5 +1,5 @@
 import { Footer } from "@/components/Footer";
-import { NewHeader } from "@/components/NewHeader";
+import { NewHeader as Header } from "@/components/NewHeader";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <NewHeader />
+      <Header />
 
       <main className="xl:ml-[320px]">
         <div className="bg-digicre-white flex flex-col px-[16px] md:px-[32px] py-[64px] gap-y-[64px] pt-[96px]">
