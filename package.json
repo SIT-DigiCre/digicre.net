@@ -14,7 +14,7 @@
     "@iconify-json/material-symbols": "1.2.66",
     "@iconify-json/simple-icons": "1.2.79",
     "@iconify/react": "6.0.2",
-    "@next/third-parties": "16.2.3",
+    "@next/third-parties": "16.2.4",
     "@splidejs/react-splide": "0.7.12",
     "@splidejs/splide-extension-video": "0.8.0",
     "autoprefixer": "10.5.0",
