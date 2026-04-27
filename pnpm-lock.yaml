@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@iconify-json/material-symbols':
-        specifier: 1.2.67
-        version: 1.2.67
+        specifier: 1.2.69
+        version: 1.2.69
       '@iconify-json/simple-icons':
         specifier: 1.2.79
         version: 1.2.79
@@ -133,8 +133,8 @@ packages:
   '@emnapi/runtime@1.10.0':
     resolution: {integrity: sha512-ewvYlk86xUoGI0zQRNq/mC+16R1QeDlKQy21Ki3oSYXNgLb45GV1P6A0M+/s6nyCuNDqe5VpaY84BzXGwVbwFA==}
 
-  '@iconify-json/material-symbols@1.2.67':
-    resolution: {integrity: sha512-9cKkCiHfShI795yoX+f7EqchoOcPWgyl2pMcXkyylX66AJ+B5mYEOEFxYpU7toOoquOEY2OYrgU89neik0N02w==}
+  '@iconify-json/material-symbols@1.2.69':
+    resolution: {integrity: sha512-N5n1p1vXsSJag9RmorZAwN5f5rs0lJfYa5xKs1FGKNV9DerVlMqG4nCYOoCb7XjwWWT1o+1Dc9Uu/cmDtCnb8Q==}
 
   '@iconify-json/simple-icons@1.2.79':
     resolution: {integrity: sha512-aNyO7Fd1qej9oQfIyohYFRv0lhQLaZ+6UkK1c1qwax0MDPUOZOdq65MlU500kow97pD/W+b2u1And3e25eE24Q==}
@@ -1042,7 +1042,7 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@iconify-json/material-symbols@1.2.67':
+  '@iconify-json/material-symbols@1.2.69':
     dependencies:
       '@iconify/types': 2.0.0
 
