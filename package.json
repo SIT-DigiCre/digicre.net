@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@iconify-json/material-symbols": "1.2.71",
-    "@iconify-json/simple-icons": "1.2.80",
+    "@iconify-json/simple-icons": "1.2.81",
     "@iconify/react": "6.0.2",
     "@next/third-parties": "16.2.6",
     "@splidejs/react-splide": "0.7.12",
