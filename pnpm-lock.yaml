@@ -12,8 +12,8 @@ importers:
         specifier: 1.2.74
         version: 1.2.74
       '@iconify-json/simple-icons':
-        specifier: 1.2.83
-        version: 1.2.83
+        specifier: 1.2.84
+        version: 1.2.84
       '@iconify/react':
         specifier: 6.0.2
         version: 6.0.2(react@19.2.6)
@@ -136,8 +136,8 @@ packages:
   '@iconify-json/material-symbols@1.2.74':
     resolution: {integrity: sha512-GKJcvvm8A25pkh3Z2M430olvP4hDpDKg2sg7cpVnesM4bT7rExH74ThtRLWjdB86qhkxT3XrMuHRJa8LFCRmSw==}
 
-  '@iconify-json/simple-icons@1.2.83':
-    resolution: {integrity: sha512-6Pp9V++XisT9RKH7FB4RLPqUDzcmLtSma0ovOEIoEWGrXtHwBFsH7oN1z8vvCVCb95fb87QgR46/zRLyN9Y3kg==}
+  '@iconify-json/simple-icons@1.2.84':
+    resolution: {integrity: sha512-v4JVu6xIewGoETD4mm2k6UAdFAbTlY1duw5ZNSxYORfs2yFsHDhoU9Omn/BgrV0nR/ptWkF3ZIr/ZHoYXI/6Jw==}
 
   '@iconify/react@6.0.2':
     resolution: {integrity: sha512-SMmC2sactfpJD427WJEDN6PMyznTFMhByK9yLW0gOTtnjzzbsi/Ke/XqsumsavFPwNiXs8jSiYeZTmLCLwO+Fg==}
@@ -1047,7 +1047,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/simple-icons@1.2.83':
+  '@iconify-json/simple-icons@1.2.84':
     dependencies:
       '@iconify/types': 2.0.0
 
