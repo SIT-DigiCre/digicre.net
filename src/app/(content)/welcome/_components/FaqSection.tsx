@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { MaterialSymbolsOpenInNew } from "@/components/Icon";
+import Link from "next/link";
 
 const memberTableData = [
   { year: "2026", total: "234", female: "53" },
@@ -14,7 +14,7 @@ const faqs = [
     answer: (
       <>
         <p>
-          <strong>年間 2000 円</strong>です。
+          <strong>年間 2,000 円</strong>です。
         </p>
         <p>参加費は、部室の備品購入やイベントへの出展料などに使用します。</p>
       </>
