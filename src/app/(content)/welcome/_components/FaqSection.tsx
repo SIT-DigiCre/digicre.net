@@ -2,9 +2,10 @@ import Link from "next/link";
 import { MaterialSymbolsOpenInNew } from "@/components/Icon";
 
 const memberTableData = [
+  { year: "2026", total: "234", female: "53" },
   { year: "2025", total: "219", female: "36" },
   { year: "2024", total: "116", female: "19" },
-  { year: "2023", total: "121", female: "18" },
+  // { year: "2023", total: "121", female: "18" },
 ];
 
 const faqs = [
@@ -13,7 +14,7 @@ const faqs = [
     answer: (
       <>
         <p>
-          <strong>年間 2000 円</strong>です。
+          <strong>年間 2,000 円</strong>です。
         </p>
         <p>参加費は、部室の備品購入やイベントへの出展料などに使用します。</p>
       </>
@@ -37,8 +38,8 @@ const faqs = [
     answer: (
       <>
         <p>
-          <strong>2025 年 11 月現在</strong>、学部生・大学院生を合わせて{" "}
-          <strong>219 名</strong>のデジクリ部員が活動しています。
+          <strong>2026 年 5 月現在</strong>、学部生・大学院生を合わせて{" "}
+          <strong>234 名</strong>のデジクリ部員が活動しています。
         </p>
         <p>
           <strong>過去 3 年間</strong>の部員数の推移は、下表の通りです。
@@ -47,7 +48,7 @@ const faqs = [
           <thead>
             <tr>
               <th className="border border-[#404040] p-4 text-center leading-tight font-bold">
-                入学年度
+                年度
               </th>
               <th className="border border-[#404040] p-4 text-center leading-tight font-bold">
                 合計
