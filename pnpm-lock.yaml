@@ -19,7 +19,7 @@ importers:
         version: 6.0.2(react@19.2.7)
       '@next/third-parties':
         specifier: 16.2.9
-        version: 16.2.9(next@16.2.9(react-dom@19.2.6(react@19.2.7))(react@19.2.7))(react@19.2.7)
+        version: 16.2.9(next@16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)
       '@splidejs/react-splide':
         specifier: 0.7.12
         version: 0.7.12
@@ -31,7 +31,7 @@ importers:
         version: 10.5.0(postcss@8.5.15)
       next:
         specifier: 16.2.9
-        version: 16.2.9(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
+        version: 16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       postcss:
         specifier: 8.5.15
         version: 8.5.15
@@ -39,8 +39,8 @@ importers:
         specifier: 19.2.7
         version: 19.2.7
       react-dom:
-        specifier: 19.2.6
-        version: 19.2.6(react@19.2.7)
+        specifier: 19.2.7
+        version: 19.2.7(react@19.2.7)
       react-markdown:
         specifier: 10.1.0
         version: 10.1.0(@types/react@19.2.17)(react@19.2.7)
@@ -873,10 +873,10 @@ packages:
   property-information@7.1.0:
     resolution: {integrity: sha512-TwEZ+X+yCJmYfL7TPUOcvBZ4QfoT5YenQiJuX//0th53DE6w0xxLEtfK3iyryQFddXuvkIk51EEgrJQ0WJkOmQ==}
 
-  react-dom@19.2.6:
-    resolution: {integrity: sha512-0prMI+hvBbPjsWnxDLxlCGyM8PN6UuWjEUCYmZhO67xIV9Xasa/r/vDnq+Xyq4Lo27g8QSbO5YzARu0D1Sps3g==}
+  react-dom@19.2.7:
+    resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
     peerDependencies:
-      react: ^19.2.6
+      react: ^19.2.7
 
   react-markdown@10.1.0:
     resolution: {integrity: sha512-qKxVopLT/TyA6BX3Ue5NwabOsAzm0Q7kAPwq6L+wWDwisYs7R8vZ0nRXqq6rkueboxpkjvLGU9fWifiX/ZZFxQ==}
@@ -1203,9 +1203,9 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.2.9':
     optional: true
 
-  '@next/third-parties@16.2.9(next@16.2.9(react-dom@19.2.6(react@19.2.7))(react@19.2.7))(react@19.2.7)':
+  '@next/third-parties@16.2.9(next@16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react@19.2.7)':
     dependencies:
-      next: 16.2.9(react-dom@19.2.6(react@19.2.7))(react@19.2.7)
+      next: 16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react: 19.2.7
       third-party-capital: 1.0.20
 
@@ -1735,7 +1735,7 @@ snapshots:
 
   native-promise-only@0.8.1: {}
 
-  next@16.2.9(react-dom@19.2.6(react@19.2.7))(react@19.2.7):
+  next@16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
       '@next/env': 16.2.9
       '@swc/helpers': 0.5.15
@@ -1743,7 +1743,7 @@ snapshots:
       caniuse-lite: 1.0.30001799
       postcss: 8.4.31
       react: 19.2.7
-      react-dom: 19.2.6(react@19.2.7)
+      react-dom: 19.2.7(react@19.2.7)
       styled-jsx: 5.1.6(react@19.2.7)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.2.9
@@ -1789,7 +1789,7 @@ snapshots:
 
   property-information@7.1.0: {}
 
-  react-dom@19.2.6(react@19.2.7):
+  react-dom@19.2.7(react@19.2.7):
     dependencies:
       react: 19.2.7
       scheduler: 0.27.0
