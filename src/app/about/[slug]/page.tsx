@@ -1,6 +1,6 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import { Footer } from "@/components/Footer";
-import { NewHeader as Header } from "@/components/NewHeader";
+import { Header } from "@/components/Header";
 import type { Team } from "@/data/team";
 import { Icon } from "@iconify/react";
 import parse from "html-react-parser";

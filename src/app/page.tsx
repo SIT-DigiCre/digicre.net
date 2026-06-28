@@ -1,5 +1,5 @@
 import { Footer } from "@/components/Footer";
-import { NewHeader as Header } from "@/components/NewHeader";
+import { Header } from "@/components/Header";
 import { Icon } from "@iconify/react";
 import parse from "html-react-parser";
 import type { Metadata } from "next";

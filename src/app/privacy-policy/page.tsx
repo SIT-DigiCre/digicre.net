@@ -1,6 +1,6 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import { Footer } from "@/components/Footer";
-import { NewHeader as Header } from "@/components/NewHeader";
+import { Header } from "@/components/Header";
 import type { Metadata } from "next";
 import Link from "next/link";
 

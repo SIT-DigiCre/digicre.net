@@ -54,7 +54,7 @@ const Menu: React.FC<MenuProps> = ({ title, entries }) => {
   );
 };
 
-export const NewHeader = () => {
+export const Header = () => {
   return (
     <header>
       <input type="checkbox" id="header-toggle" className="peer hidden" />
