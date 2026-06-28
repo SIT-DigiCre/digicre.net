@@ -1,6 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import { Footer } from "@/components/Footer";
 import { NewHeader as Header } from "@/components/NewHeader";
+import type { Team } from "@/data/team";
 import { Icon } from "@iconify/react";
 import parse from "html-react-parser";
 import type { Metadata } from "next";
@@ -16,34 +17,6 @@ export const metadata: Metadata = {
 
 type Params = {
   slug: string;
-};
-
-type Team = {
-  id: string;
-  name: string;
-  about: About;
-  activity: Activity;
-  learn_more: LearnMore[];
-};
-
-type About = {
-  content: string;
-};
-
-type Activity = {
-  content: string;
-  works: Work[];
-};
-
-type Work = {
-  title: string;
-  image: string;
-  href: null;
-};
-
-type LearnMore = {
-  title: string;
-  content: string;
 };
 
 const rawTeams = readFileSync("./src/data/teams.yaml", "utf-8");

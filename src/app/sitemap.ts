@@ -1,11 +1,16 @@
+import type { Team } from "@/data/team";
 import type { MetadataRoute } from "next";
-import { teams } from "./(content)/welcome/_components/TeamsSection";
+import { readFileSync } from "node:fs";
+import YAML from "yaml";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const teams = YAML.parse(
+    readFileSync("./src/data/teams.yaml", "utf-8"),
+  ) as Team[];
   const teamPages: MetadataRoute.Sitemap = teams.map((team) => ({
-    url: `https://digicre.net/about/${team.href}`,
+    url: `https://digicre.net/about/${team.id}`,
     lastModified: new Date(),
   }));
 
@@ -14,10 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://digicre.net",
       lastModified: new Date(),
       priority: 1,
-    },
-    {
-      url: "https://digicre.net/welcome",
-      lastModified: new Date(),
     },
     ...teamPages,
   ];
