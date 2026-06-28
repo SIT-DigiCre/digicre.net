@@ -1,0 +1,94 @@
+about:
+  content: |
+     <p>芝浦工業大学の文化系サークルです。</p>
+     <p>プログラミング、ゲーム開発、イラスト、3DCG、音楽（DTM）、動画制作、VTuberなど、幅広いジャンルでデジタルコンテンツの制作を行っています。</p>
+activity:
+  content: |
+    <p>普段は部室やDiscordのVCなどで交流するほか、作品制作を行っています。毎週月曜に定例会があります。</p>
+    <p>夏休みや春休み中に希望者で集まって合宿を行っています。デジクリ部員同士で交流を深めたり、色々な講座を実施してスキルアップをしたりする機会にもなっています。</p>
+    <p>大宮祭や芝浦祭といった学内の文化祭への出展はもちろん、コミックマーケットやM3といった外部イベントにも数多く参加しています。</p>
+  examples:
+    - title: 普段の様子
+      image: foo.png
+      href: null
+    - title: 合宿
+      image: foo.png
+      href: null
+    - title: イベント出展
+      image: foo.png
+      href: null
+team:
+  content: |
+    <p>デジクリにおける「班」とは、活動分野という意味合いです。デジクリ部員は各々が自由に所属する班を名乗っています。</p>
+    <p>同じ班のデジクリ部員同士で交流するだけでなく、ときには複数の班でコラポレーションして作品を制作することもあります。</p>
+  teams:
+    - title: PG班
+      image: pg.png
+      href: /about/pg/
+    - title: イラスト班
+      image: 2dcg.png
+      href: /about/2dcg/
+    - title: 3DCG班
+      image: 3dcg.png
+      href: /about/3dcg/
+    - title: DTM班
+      image: dtm.png
+      href: /about/dtm/
+    - title: Movie班
+      image: movie.png
+      href: /about/movie/
+    - title: VTuber班
+      image: vtuber.png
+      href: /about/vtuber/
+    - title: 文字書き班
+      image: writing.png
+      href: /about/writing/
+learn_more:
+  - title: 費用はいくらですか？
+    content: |
+      <p><strong>年間2,000円</strong>です。備品購入やイベントへの出展料などに使います。</p>
+  - title: 兼部やアルバイトとの両立は可能ですか？
+    content: |
+      <p><strong>はい、両立可能</strong>です。ほかのサークルや部活動との掛け持ち、アルバイトをしながら活動するデジクリ部員も多数おります。</p>
+  - title: 部員数はどれくらいですか？
+    content: |
+      <p>2026年5月現在、<strong>学部生・大学院生を合わせて234名のデジクリ部員が活動</strong>しています。なお、過去 3 年間の部員数は、下表の通りです。</p>
+      <table>
+        <thead>
+          <tr>
+            <th>年度</th>
+            <th>男子</th>
+            <th>女子</th>
+            <th>合計</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026</td>
+            <td>181</td>
+            <td>53</td>
+            <td>234</td>
+          </tr>
+          <tr>
+            <td>2025</td>
+            <td>183</td>
+            <td>36</td>
+            <td>219</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>97</td>
+            <td>19</td>
+            <td>116</td>
+          </tr>
+        </tbody>
+      </table>
+  - title: 定例会とは何ですか？
+    content: |
+      <p><strong>毎週月曜21:00にオンラインで行っているミーティングのこと</strong>です。デジクリ部員全体への連絡、企画の進捗報告、初心者講座、LT（ライトニングトーク）などを行います。</p>
+  - title: 定例会への参加は必須ですか？
+    content: |
+      <p><strong>いいえ、参加は任意</strong>です。なお、毎回の定例会で議事録や録画を残しているため、後から内容を確認できるようになっています。</p>
+  - title: 上記以外で質問したいことがあります。どうすれば良いですか？
+    content: |
+      <p>デジクリの<a href="https://x.com/sitdigicre" target="_blank">公式X（Twitter）</a>宛にDMをお送りいただくか、メールでお問い合わせください。</p>
