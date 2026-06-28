@@ -1,0 +1,138 @@
+- id: pg
+  name: PG班
+  about:
+    content: |
+      <p>PG班では、プログラミングによる創作をしています。</p>
+      <p>ゲーム開発やアプリ開発の他にもWeb開発やマイコン、Raspberry Piなどを用いた開発や機械学習といった様々な分野があります。</p>
+  activity:
+    content: |
+      <p>各々でなんでもアリなおもちゃを開発する「PGおもちゃ企画」、イラスト班やDTM班と協力してゲーム開発を行う「ゲームジャム企画」や「ゲーム制作企画」などがあります。</p>
+      <p>他にもデジクリを支える「デジコア」や「Bolide」などのシステム開発もしています。</p>
+    works:
+      - title: ゲーム制作企画
+        image: foo.png
+        href: null
+      - title: PGおもちゃ企画
+        image: foo.png
+        href: null
+  learn_more:
+    - title: タイトル
+      content: |
+        <p>ここに内容を入力</p>
+
+- id: 2dcg
+  name: イラスト班
+  about:
+    content: |
+      <p>イラスト班では、主にパソコンやタブレットなどを使ったデジタルイラストの制作をしています。</p>
+      <p>様々なキャラクターを描いたイラストの制作の他にも技術向上を目的とした模写などをしています。</p>
+  activity:
+    content: |
+      <p>テーマに合わせたイラストをみんなで書いて合同誌にする「デジクリイラスト合同誌企画」やみんなで模写をする「模写会企画」などがあります。</p>
+    works:
+      - title: 模写会企画
+        image: foo.png
+        href: null
+      - title: 合同誌企画
+        image: foo.png
+        href: null
+  learn_more:
+    - title: タイトル
+      content: |
+        <p>ここに内容を入力</p>
+
+- id: 3dcg
+  name: 3DCG班
+  about:
+    content: |
+      <p>3DCG班では、Blenderなどのソフトを用いて3Dモデルを制作していたりしています。</p>
+      <p>人型のモデルだけでなく小物や部屋など様々なモデルを制作しています。</p>
+  activity:
+    content: |
+      <p>各々のやり方で各々の作りたい人を作る「3DCGで人を創ろう」などの企画をしています。</p>
+    works:
+      - title: 3DCGで人を創ろう企画
+        image: foo.png
+        href: null
+  learn_more:
+    - title: タイトル
+      content: |
+        <p>ここに内容を入力</p>
+
+- id: dtm
+  name: DTM班
+  about:
+    content: |
+      <p>DTM班では、主にパソコンを用いた音楽制作をしています。</p>
+      <p>パソコンと電子機器、楽器などを用いて楽曲やゲームに使用するBGMの提供などをしています。</p>
+  activity:
+    content: |
+      <p>複数人で既存の曲をアレンジしたものをリレー形式でつないでいく「アレンジリレー企画」やみんなで曲を作ってアルバムにして販売する「アルバム企画」、24時間以内の限られた時間で楽曲を制作する「n時間DTM企画」などがあります。</p>
+    works:
+      - title: アレンジリレー企画
+        image: foo.png
+        href: null
+      - title: n時間DTM企画
+        image: foo.png
+        href: null
+      - title: アルバム企画
+        image: foo.png
+        href: null
+  learn_more:
+    - title: タイトル
+      content: |
+        <p>ここに内容を入力</p>
+
+- id: movie
+  name: Movie班
+  about:
+    content: |
+      <p>イラスト班やDTM班と一緒にMVを制作する「MV制作企画」や24時間以内の限られた時間でお題の音に合わせたモーショングラフィックスを制作する「n時間Movie企画」などをしています。</p>
+  activity:
+    content: |
+      <p></p>
+    works:
+      - title: MV制作企画
+        image: foo.png
+        href: null
+      - title: n時間Movie企画
+        image: foo.png
+        href: null
+  learn_more:
+    - title: タイトル
+      content: |
+        <p>ここに内容を入力</p>
+
+- id: vtuber
+  name: VTuber班
+  about:
+    content: |
+      <p>VTuber班では、デジクリ公式キャラクター「デジペン」を用いたゲーム実況などをしています。</p>
+  activity:
+    content: |
+      <p>公式YouTubeチャンネル「デジクリVTuberチャンネル」での動画や生放送でのゲーム実況などをしています。</p>
+    works:
+      - title:
+        image: foo.png
+        href: null
+  learn_more:
+    - title: タイトル
+      content: |
+        <p>ここに内容を入力</p>
+
+- id: writing
+  name: 文字書き班
+  about:
+    content: |
+      <p>文字書き班では、主に媒体を問わず各々で物語を書いています。</p>
+  activity:
+    content: |
+      <p>ゲームのシナリオを書いていたり、TRPGのシナリオを書いたり、個人で物語を書いたりしています。</p>
+    works:
+      - title: Advent Calendar企画
+        image: foo.png
+        href: null
+  learn_more:
+    - title: タイトル
+      content: |
+        <p>ここに内容を入力</p>
