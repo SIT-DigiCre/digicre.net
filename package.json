@@ -17,7 +17,7 @@
     "@next/third-parties": "16.2.10",
     "@splidejs/react-splide": "0.7.12",
     "@splidejs/splide-extension-video": "0.8.0",
-    "autoprefixer": "10.5.2",
+    "autoprefixer": "10.5.4",
     "next": "16.2.10",
     "postcss": "8.5.18",
     "react": "19.2.8",
