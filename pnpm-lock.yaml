@@ -19,7 +19,7 @@ importers:
         version: 6.0.2(react@19.2.8)
       '@next/third-parties':
         specifier: 16.2.12
-        version: 16.2.12(next@16.2.12(react-dom@19.2.7(react@19.2.8))(react@19.2.8))(react@19.2.8)
+        version: 16.2.12(next@16.2.12(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
       '@splidejs/react-splide':
         specifier: 0.7.12
         version: 0.7.12
@@ -31,7 +31,7 @@ importers:
         version: 10.5.4(postcss@8.5.23)
       next:
         specifier: 16.2.12
-        version: 16.2.12(react-dom@19.2.7(react@19.2.8))(react@19.2.8)
+        version: 16.2.12(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       postcss:
         specifier: 8.5.23
         version: 8.5.23
@@ -39,8 +39,8 @@ importers:
         specifier: 19.2.8
         version: 19.2.8
       react-dom:
-        specifier: 19.2.7
-        version: 19.2.7(react@19.2.8)
+        specifier: 19.2.8
+        version: 19.2.8(react@19.2.8)
       react-markdown:
         specifier: 10.1.0
         version: 10.1.0(@types/react@19.2.17)(react@19.2.8)
@@ -61,8 +61,8 @@ importers:
         specifier: 19.2.17
         version: 19.2.17
       '@types/react-dom':
-        specifier: 19.2.3
-        version: 19.2.3(@types/react@19.2.17)
+        specifier: 19.2.4
+        version: 19.2.4(@types/react@19.2.17)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -502,8 +502,8 @@ packages:
   '@types/node@25.9.5':
     resolution: {integrity: sha512-OScDchr2fwuUmWdf4kZ9h7PcJiYDVInhJizG/biAq3cAvqwYktuy/TYGGdZNMtNTFUP7rnb0NU4TUdm82kt4Rg==}
 
-  '@types/react-dom@19.2.3':
-    resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
+  '@types/react-dom@19.2.4':
+    resolution: {integrity: sha512-Bsc+QHgp+P/F02XDzNCY9jnZNCUuLki36KT7VKrTXXLdHf+vHMNZnW1rVu5DNW/rCK+fya3DATySbLM4yhtKUw==}
     peerDependencies:
       '@types/react': ^19.2.0
 
@@ -871,10 +871,10 @@ packages:
   property-information@7.1.0:
     resolution: {integrity: sha512-TwEZ+X+yCJmYfL7TPUOcvBZ4QfoT5YenQiJuX//0th53DE6w0xxLEtfK3iyryQFddXuvkIk51EEgrJQ0WJkOmQ==}
 
-  react-dom@19.2.7:
-    resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
+  react-dom@19.2.8:
+    resolution: {integrity: sha512-rVprimfGBG3DR+Tq0IQG2DT5PxKth1WIGDmj5yPmlzr4YBe7uyE+Du4oVqTDXZSHGGGXRtTJEGSSePyQCMBglQ==}
     peerDependencies:
-      react: ^19.2.7
+      react: ^19.2.8
 
   react-markdown@10.1.0:
     resolution: {integrity: sha512-qKxVopLT/TyA6BX3Ue5NwabOsAzm0Q7kAPwq6L+wWDwisYs7R8vZ0nRXqq6rkueboxpkjvLGU9fWifiX/ZZFxQ==}
@@ -1198,9 +1198,9 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.2.12':
     optional: true
 
-  '@next/third-parties@16.2.12(next@16.2.12(react-dom@19.2.7(react@19.2.8))(react@19.2.8))(react@19.2.8)':
+  '@next/third-parties@16.2.12(next@16.2.12(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)':
     dependencies:
-      next: 16.2.12(react-dom@19.2.7(react@19.2.8))(react@19.2.8)
+      next: 16.2.12(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react: 19.2.8
       third-party-capital: 1.0.20
 
@@ -1311,7 +1311,7 @@ snapshots:
     dependencies:
       undici-types: 7.24.6
 
-  '@types/react-dom@19.2.3(@types/react@19.2.17)':
+  '@types/react-dom@19.2.4(@types/react@19.2.17)':
     dependencies:
       '@types/react': 19.2.17
 
@@ -1728,7 +1728,7 @@ snapshots:
 
   native-promise-only@0.8.1: {}
 
-  next@16.2.12(react-dom@19.2.7(react@19.2.8))(react@19.2.8):
+  next@16.2.12(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
       '@next/env': 16.2.12
       '@swc/helpers': 0.5.15
@@ -1736,7 +1736,7 @@ snapshots:
       caniuse-lite: 1.0.30001806
       postcss: 8.4.31
       react: 19.2.8
-      react-dom: 19.2.7(react@19.2.8)
+      react-dom: 19.2.8(react@19.2.8)
       styled-jsx: 5.1.6(react@19.2.8)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.2.12
@@ -1782,7 +1782,7 @@ snapshots:
 
   property-information@7.1.0: {}
 
-  react-dom@19.2.7(react@19.2.8):
+  react-dom@19.2.8(react@19.2.8):
     dependencies:
       react: 19.2.8
       scheduler: 0.27.0
