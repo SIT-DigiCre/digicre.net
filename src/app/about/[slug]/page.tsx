@@ -1,11 +1,12 @@
-import Breadcrumb from "@/components/Breadcrumb";
+import { Card, CardContainer, CardTextBox } from "@/components/Card";
+import { FaqItem, FaqList } from "@/components/Faq";
+import { FigureItem, FigureList } from "@/components/Figure";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { JoinUs } from "@/components/JoinUs";
 import type { Team } from "@/data/team";
-import { Icon } from "@iconify/react";
 import parse from "html-react-parser";
 import type { Metadata } from "next";
-import Link from "next/link";
 import { readFileSync } from "node:fs";
 import YAML from "yaml";
 
@@ -33,89 +34,62 @@ export default async function Page({ params }: { params: Params }) {
   return (
     <>
       <Header />
+      <main className="bg-digicre-skyblue">
+        <div className="flex py-16 px-8 flex-col gap-16 max-w-240 min-w-[320px] mx-auto">
+          <Card>
+            <CardContainer>
+              <CardTextBox>
+                <h2 className="text-24-700">{`${team.name}とは？`}</h2>
 
-      <main className="xl:ml-[320px]">
-        <Breadcrumb />
+                <div>{parse(team.about.content)}</div>
+              </CardTextBox>
+            </CardContainer>
+          </Card>
 
-        <section className="bg-sky px-[16px] md:px-[32px] py-[64px] flex flex-col gap-y-[64px]">
-          <div className="text-white border-l-[0.25rem] border-[#fff] pl-[1rem]">
-            <h2 className="text-28-700 mb-[2rem]">{`${team.name}とは？`}</h2>
-            <div className="text-20-400">{parse(team.about.content)}</div>
-          </div>
-        </section>
+          <Card>
+            <CardContainer>
+              <CardTextBox>
+                <h2 className="text-24-700">{`${team.name}の主な活動`}</h2>
 
-        <section
-          id="activities"
-          className="bg-[#fff] px-[16px] md:px-[32px] py-[64px] flex flex-col gap-y-[64px]"
-        >
-          <div className="text-[#20020] border-l-[0.25rem] border-sky pl-[1rem]">
-            <h2 className="text-28-700 mb-[2rem]">{`${team.name}の主な活動`}</h2>
-            <div className="text-20-400">{parse(team.activity.content)}</div>
-          </div>
+                <div>{parse(team.activity.content)}</div>
+              </CardTextBox>
 
-          {/* ダミー */}
-          <ul className="grid md:grid-cols-2 xl:grid-cols-3 gap-[16px]">
-            {team.activity.works.map((item, index) => (
-              <li
-                key={index}
-                className="aspect-square bg-[#202020] text-digicre-white border-[2px] border-[#808080] rounded-[16px]"
-              >
-                {item.title}
-              </li>
-            ))}
-          </ul>
-        </section>
+              <FigureList>
+                {team.activity.works.map((item, index) => (
+                  <FigureItem
+                    image={item.image}
+                    title={item.title}
+                    key={index}
+                  />
+                ))}
+              </FigureList>
+            </CardContainer>
+          </Card>
 
-        <section className="bg-[#DFDFDF] px-[16px] md:px-[32px] py-[64px] flex flex-col gap-y-[64px]">
-          <div className="text-[#202020] border-l-[0.25rem] border-[#202020] pl-[1rem]">
-            <h2 className="text-28-700 mb-[2rem]">{`${team.name}についてもっと詳しく！`}</h2>
+          <Card variant="dark">
+            <CardContainer>
+              <CardTextBox>
+                <h2 className="text-24-700">{`${team.name}について詳しく！`}</h2>
 
-            <p className="text-20-400">
-              {`${team.name}に寄せられる主な質問と回答をまとめました。`}
-            </p>
-          </div>
+                <div>
+                  <p>
+                    {`${team.name}に寄せられる主な質問と回答をまとめました。`}
+                  </p>
+                </div>
+              </CardTextBox>
 
-          <div className="flex flex-col gap-y-[16px]">
-            {team.learn_more.map((item, index) => (
-              <details
-                name="faq"
-                key={index}
-                className="bg-white text-[#202020] border-[2px] border-[#808080] p-[16px] rounded-[16px]"
-              >
-                <summary className="text-20-700 list-none">
-                  <h3>{item.title}</h3>
-                </summary>
+              <FaqList>
+                {team.learn_more.map((item, index) => (
+                  <FaqItem question={item.title} key={index}>
+                    {parse(item.content)}
+                  </FaqItem>
+                ))}
+              </FaqList>
+            </CardContainer>
+          </Card>
 
-                <div className="mt-[16px]">{parse(item.content)}</div>
-              </details>
-            ))}
-          </div>
-        </section>
-
-        <section className="bg-sky px-[16px] md:px-[32px] py-[64px] flex flex-col gap-y-[64px]">
-          <div className="text-white border-l-[0.25rem] border-[#fff] pl-[1rem]">
-            <h2 className="text-28-700 mb-[2rem]">
-              デジクリで活動してみませんか？
-            </h2>
-
-            <p className="text-20-400">
-              入部受付フォームからメールアドレスをご登録いただくと、デジクリへの入部方法や見学案内などのメールをお送りします。
-            </p>
-          </div>
-
-          <Link
-            href="https://forms.gle/cY25Kc6fssqv2tZz9"
-            className="bg-[#fff] border-[2px] border-[#808080] text-[#202020] p-[16px] flex gap-[16px] rounded-[16px] items-center text-20-700"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="w-full font-bold">入部受付フォーム</span>
-            <Icon
-              icon="material-symbols:open-in-new-rounded"
-              className="text-[2rem]"
-            />
-          </Link>
-        </section>
+          <JoinUs />
+        </div>
       </main>
 
       <Footer />

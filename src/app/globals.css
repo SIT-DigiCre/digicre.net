@@ -1,30 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-digicre-skyblue: #00B0F0;
+  --color-digicre-skyblue: #00b0f0;
   --color-digicre-black: #202020;
   --color-digicre-white: #ffffff;
   --color-blue: #0c5ae9;
   --color-gray: #84929e;
   --color-sky: #00b0f0;
-  --font-sans:
-    var(--font-inter), "Helvetica Neue", "Arial", "Noto Sans JP",
-    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "sans-serif", ;
 }
 
 @layer base {
   html {
+    line-height: 2;
     scroll-behavior: smooth;
-  }
-
-  body {
-    @apply font-sans;
   }
 }
 
 @layer utilities {
-  .text-28-700 {
-    font-size: 1.75rem;
+  .text-24-700 {
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 2rem;
   }
@@ -49,69 +43,5 @@
 
   .consider-scrollbar {
     scrollbar-gutter: stable;
-  }
-
-  .container {
-    @apply mx-auto flex max-w-[1280px] flex-col gap-y-[64px] px-[16px] py-[64px] md:gap-y-[128px] md:px-[64px] md:py-[128px] xl:gap-y-[128px] xl:px-[96px] xl:py-[128px];
-  }
-
-  .hStack {
-    @apply flex items-center gap-x-[16px];
-  }
-
-  .logo {
-    @apply h-[48px] w-[176px] text-white;
-  }
-
-  .card {
-    @apply w-full rounded-[16px] border-2 border-solid border-gray bg-white;
-  }
-
-  .card h2 {
-    @apply mb-[24px] text-center text-2xl/[1.5] font-bold tracking-[0.125em] text-[#0C5AE9];
-  }
-
-  .card h3 {
-    @apply mb-[24px] mt-[40px] text-xl/[1.5] font-bold text-[#0C5AE9];
-  }
-
-  .card p {
-    @apply mb-[16px] text-base/[1.75] last:mb-0;
-  }
-
-  .card ul {
-    @apply ml-[2rem] list-disc;
-  }
-
-  .card ol {
-    @apply ml-[2rem] list-decimal;
-  }
-
-  .card li {
-    @apply text-base/[1.75];
-  }
-
-  .card a:any-link {
-    @apply text-[#0C5AE9] underline;
-  }
-
-  .button {
-    @apply w-full rounded-[9999px] border-2 border-solid border-gray bg-white px-[32px] py-[16px];
-  }
-
-  .linkBox {
-    @apply relative overflow-hidden;
-  }
-
-  .linkOverlay {
-    @apply before:absolute before:inset-0 before:h-full before:w-full before:content-[""];
-  }
-
-  .body {
-    @apply flex min-h-screen flex-col lg:ml-[25%];
-  }
-
-  .body>main {
-    @apply flex-grow;
   }
 }

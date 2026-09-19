@@ -1,4 +1,4 @@
-import Breadcrumb from "@/components/Breadcrumb";
+import { Card, CardContainer, CardTextBox } from "@/components/Card";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import type { Metadata } from "next";
@@ -30,49 +30,51 @@ export default function PrivacyPolicyPage() {
     <>
       <Header />
 
-      <main className="xl:ml-[320px]">
-        <Breadcrumb />
+      <main className="bg-digicre-skyblue">
+        <div className="flex py-16 px-8 flex-col gap-16 max-w-240 min-w-[320px] mx-auto">
+          <Card>
+            <CardContainer>
+              <CardTextBox>
+                <h1 className="text-24-700">プライバシーポリシー</h1>
+              </CardTextBox>
 
-        <div className="bg-digicre-skyblue text-digicre-white flex flex-col px-[16px] md:px-[32px] py-[64px] gap-y-[64px]">
-          <div className="text-white border-l-[0.25rem] border-[#fff] pl-[1rem]">
-            <h1 className="text-28-700">プライバシーポリシー</h1>
-          </div>
+              <section>
+                <h2 className="text-20-700 mb-[1rlh]">
+                  Google Analyticsについて
+                </h2>
+
+                <p className="mb-[1rlh]">
+                  本サイトでは、アクセス状況の把握およびサイトの品質向上を目的としてGoogle
+                  Analyticsを利用しています。
+                </p>
+
+                <p className="mb-[1rlh]">
+                  Google
+                  Analyticsでは、Cookieを用いて本サイトへのアクセス状況に関するデータを収集します。これらのデータは、Google社のプライバシーポリシーに則って取り扱われます。詳しくは「
+                  <Link
+                    href="https://marketingplatform.google.com/about/analytics/terms/jp/"
+                    target="_blank"
+                  >
+                    Google アナリティクス利用規約
+                  </Link>
+                  」をご覧ください。
+                </p>
+
+                <p>
+                  なお、Google
+                  Analyticsによるデータ収集をオプトアウトする方法に関しては「
+                  <Link
+                    href="https://tools.google.com/dlpage/gaoptout?hl=ja"
+                    target="_blank"
+                  >
+                    Google アナリティクス オプトアウト アドオン
+                  </Link>
+                  」をご参照ください。
+                </p>
+              </section>
+            </CardContainer>
+          </Card>
         </div>
-
-        <article className="bg-digicre-white flex flex-col px-[16px] md:px-[32px] py-[64px] gap-y-[64px]">
-          <div>
-            <h2 className="text-20-700 mb-[2rem]">Google Analyticsについて</h2>
-
-            <p className="text-16-400">
-              本サイトでは、アクセス状況の把握およびサイトの品質向上を目的としてGoogle
-              Analyticsを利用しています。
-            </p>
-
-            <p className="text-16-400">
-              Google
-              Analyticsでは、Cookieを用いて本サイトへのアクセス状況に関するデータを収集します。これらのデータは、Google社のプライバシーポリシーに則って取り扱われます。詳しくは「
-              <Link
-                href="https://marketingplatform.google.com/about/analytics/terms/jp/"
-                target="_blank"
-              >
-                Google アナリティクス利用規約
-              </Link>
-              」をご覧ください。
-            </p>
-
-            <p className="text-16-400">
-              なお、Google
-              Analyticsによるデータ収集をオプトアウトする方法に関しては「
-              <Link
-                href="https://tools.google.com/dlpage/gaoptout?hl=ja"
-                target="_blank"
-              >
-                Google アナリティクス オプトアウト アドオン
-              </Link>
-              」をご参照ください。
-            </p>
-          </div>
-        </article>
       </main>
 
       <Footer />

@@ -1,12 +1,14 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, LINE_Seed_JP } from "next/font/google";
 import "./globals.css";
 
+// Fonts
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
+});
+const lineSeedJp = LINE_Seed_JP({
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -50,7 +52,13 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <GoogleAnalytics gaId="G-5GLTJ9X6XX" />
-      <body className={inter.className}>{children}</body>
+      <body
+        style={{
+          fontFamily: `${inter.style.fontFamily}, ${lineSeedJp.style.fontFamily}`,
+        }}
+      >
+        {children}
+      </body>
     </html>
   );
 }

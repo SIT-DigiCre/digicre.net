@@ -1,52 +1,31 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import { DigicreLogo } from "./Icon";
+import { LinkButton } from "./LinkButton";
 
-interface MenuEntry {
+interface MenuItem {
   href: string;
   title: string;
 }
 
 interface MenuProps {
   title: string;
-  entries: MenuEntry[];
+  items: MenuItem[];
 }
 
-const Menu: React.FC<MenuProps> = ({ title, entries }) => {
-  const isExternalLink = (href: string): boolean => {
-    return !href.startsWith("/");
-  };
-
+const Menu: React.FC<MenuProps> = ({ title, items }) => {
   return (
-    <nav className="flex flex-col gap-y-[32px]">
-      <p className="border-l-[4px] border-digicre-skyblue pl-[16px] text-digicre-white text-28-700">
+    <nav className="flex flex-col gap-y-[1rlh]">
+      <h4 className="border-l-4 border-digicre-skyblue pl-4 text-digicre-white text-24-700">
         {title}
-      </p>
+      </h4>
 
-      <ul className="flex flex-col gap-y-[16px]">
-        {entries.map((item, index) => (
+      <ul className="flex flex-col gap-y-[0.5rlh]">
+        {items.map((item, index) => (
           <li key={index}>
-            <a
-              href={item.href}
-              target={isExternalLink(item.href) ? "_blank" : undefined}
-              rel={
-                isExternalLink(item.href) ? "noopener noreferrer" : undefined
-              }
-              className="bg-[#404040] border-[2px] border-[#808080] text-[#fff] p-[16px] flex gap-[16px] rounded-[16px] items-center text-20-700"
-            >
-              <span className="w-full font-bold text-[1.25rem]">
-                {item.title}
-              </span>
-
-              <Icon
-                icon={
-                  isExternalLink(item.href)
-                    ? "material-symbols:open-in-new-rounded"
-                    : "material-symbols:chevron-right-rounded"
-                }
-                className="text-[2rem]"
-              />
-            </a>
+            <LinkButton variant="dark" href={item.href}>
+              {item.title}
+            </LinkButton>
           </li>
         ))}
       </ul>
@@ -61,7 +40,7 @@ export const Header = () => {
 
       <label
         htmlFor="header-toggle"
-        className="peer-checked:hidden xl:hidden fixed top-0 left-0 z-1 bg-[#00b0f0] p-[16px] rounded-br-[16px] shadow-[2px_2px_8px_0_rgba(32_32_32_/_75%)]"
+        className="peer-checked:hidden xl:hidden fixed top-0 left-0 z-1 bg-[#00b0f0] p-[16px] rounded-br-[16px] shadow-[2px_2px_8px_0_rgba(32_32_32/75%)]"
       >
         <Icon
           icon="material-symbols:menu-rounded"
@@ -79,14 +58,14 @@ export const Header = () => {
         />
       </label>
 
-      <div className="max-xl:peer-not-checked:hidden fixed top-0 left-0 z-0 overscroll-none bg-[#202020] min-inline-[320px] h-full overflow-y-auto consider-scrollbar px-[16px] py-[64px] flex flex-col gap-y-[64px]">
+      <div className="max-xl:peer-not-checked:hidden fixed top-0 left-0 z-0 overscroll-none bg-[#202020] min-inline-[320px] h-full overflow-y-auto consider-scrollbar px-4 py-[2rlh] flex flex-col gap-y-[2rlh]">
         <Link href="/" className="mx-auto">
-          <DigicreLogo className="aspect-[176/48] w-full h-[64px] shrink-0 text-[#fff]" />
+          <DigicreLogo className="aspect-176/48 w-full h-[2rlh] shrink-0 text-white" />
         </Link>
 
         <Menu
           title="デジクリについて"
-          entries={[
+          items={[
             {
               title: "ホーム",
               href: "/",
@@ -116,7 +95,7 @@ export const Header = () => {
 
         <Menu
           title="公式アカウント"
-          entries={[
+          items={[
             {
               title: "X（Twitter）",
               href: "https://x.com/sitdigicre",
@@ -138,7 +117,7 @@ export const Header = () => {
 
         <Menu
           title="関連サイト"
-          entries={[
+          items={[
             {
               title: "芝浦工業大学",
               href: "https://www.shibaura-it.ac.jp/",
@@ -148,7 +127,7 @@ export const Header = () => {
 
         <Menu
           title="デジクリ部員向け"
-          entries={[
+          items={[
             {
               title: "デジコア",
               href: "https://core3.digicre.net/",
