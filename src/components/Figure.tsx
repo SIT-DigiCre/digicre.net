@@ -31,8 +31,8 @@ export const FigureItem: React.FC<FigureItemProps> = ({
   if (href) {
     return (
       <li {...htmlProps}>
-        <figure className="relative border-2 border-[#808080] rounded-2xl overflow-hidden">
-          <Link href={href}>
+        <figure className="relative border-2 border-[#808080] bg-digicre-black rounded-2xl overflow-hidden [clip-path:inset(0_round_var(--radius-2xl))]">
+          <Link href={href} className="relative">
             <Image
               src={image}
               alt=""
@@ -41,8 +41,8 @@ export const FigureItem: React.FC<FigureItemProps> = ({
               className="aspect-square w-full object-cover"
             />
 
-            <figcaption className="absolute bottom-0 left-0 right-0 bg-[rgb(32_32_32/50%)] text-white px-4 py-[0.5rlh] flex gap-x-4 items-center">
-              <span className={"w-full text-20-700"}>{title}</span>
+            <figcaption className="absolute bottom-0 left-0 right-0 z-1 bg-[rgb(32_32_32/50%)] text-white px-4 py-[0.5rlh] flex gap-x-4 items-center backdrop-blur-sm">
+              <span className="w-full text-20-700">{title}</span>
 
               <Icon
                 icon="material-symbols:chevron-right-rounded"
@@ -57,7 +57,7 @@ export const FigureItem: React.FC<FigureItemProps> = ({
 
   return (
     <li {...htmlProps}>
-      <figure className="relative border-2 border-[#808080] rounded-2xl overflow-hidden">
+      <figure className="relative border-2 border-[#808080] bg-digicre-black rounded-2xl overflow-hidden [clip-path:inset(0_round_var(--radius-2xl))]">
         <Image
           src={image}
           alt=""
@@ -66,8 +66,8 @@ export const FigureItem: React.FC<FigureItemProps> = ({
           className="aspect-square w-full object-cover"
         />
 
-        <figcaption className="absolute bottom-0 left-0 right-0 bg-[rgb(32_32_32/50%)] text-white px-4 py-[0.5rlh] flex gap-x-4 items-center">
-          <span className={"w-full text-20-700"}>{title}</span>
+        <figcaption className="absolute bottom-0 left-0 right-0 z-1 bg-[rgb(32_32_32/50%)] text-white px-4 py-[0.5rlh] flex gap-x-4 items-center backdrop-blur-sm">
+          <span className="w-full text-20-700">{title}</span>
         </figcaption>
       </figure>
     </li>

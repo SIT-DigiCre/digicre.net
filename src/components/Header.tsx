@@ -56,7 +56,7 @@ export const Header = () => {
         />
       </label>
 
-      <div className="max-xl:peer-not-checked:hidden fixed top-0 left-0 z-0 overscroll-none bg-[#202020] min-inline-[320px] h-full overflow-y-auto consider-scrollbar px-4 py-[2rlh] flex flex-col gap-y-[2rlh]">
+      <div className="max-xl:peer-not-checked:hidden fixed top-0 left-0 z-2 overscroll-none bg-[#202020] min-inline-[320px] h-full overflow-y-auto consider-scrollbar px-4 py-[2rlh] flex flex-col gap-y-[2rlh]">
         <Menu
           title="デジクリについて"
           items={[

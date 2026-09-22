@@ -10,10 +10,10 @@
       <p>他にもデジクリを支える「デジコア」や「Bolide」などのシステム開発もしています。</p>
     works:
       - title: ゲーム制作企画
-        image: foo.png
+        image: /assets/images/works_pg_01.png
         href: null
       - title: PGおもちゃ企画
-        image: foo.png
+        image: /assets/images/works_pg_02.jpg
         href: null
   learn_more:
     - title: タイトル
