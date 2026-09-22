@@ -21,10 +21,10 @@ export const FaqItem: React.FC<FaqItemProps> = ({
 }) => {
   return (
     <details
-      className="bg-white px-4 py-[0.5rlh] rounded-2xl border-2 border-[#808080]"
+      className="bg-white rounded-2xl border-2 border-[#808080]"
       {...htmlProps}
     >
-      <summary className="flex gap-x-4">
+      <summary className="flex gap-x-4 px-4 py-[0.5rlh] hover:cursor-pointer">
         <h3 className="w-full text-20-700">{question}</h3>
 
         <Icon
@@ -33,7 +33,7 @@ export const FaqItem: React.FC<FaqItemProps> = ({
         />
       </summary>
 
-      <div className="mt-[1rlh]">{children}</div>
+      <div className="px-4 py-[0.5rlh]">{children}</div>
     </details>
   );
 };

@@ -3,10 +3,12 @@ import { FaqItem, FaqList } from "@/components/Faq";
 import { FigureItem, FigureList } from "@/components/Figure";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { DigicreLogo } from "@/components/Icon";
 import { JoinUs } from "@/components/JoinUs";
 import type { Team } from "@/data/team";
 import parse from "html-react-parser";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { readFileSync } from "node:fs";
 import YAML from "yaml";
 
@@ -34,8 +36,13 @@ export default async function Page({ params }: { params: Params }) {
   return (
     <>
       <Header />
+
       <main className="bg-digicre-skyblue">
         <div className="flex py-16 px-8 flex-col gap-16 max-w-240 min-w-[320px] mx-auto">
+          <Link href="/" className="mx-auto">
+            <DigicreLogo className="aspect-176/48 w-full h-[2rlh] shrink-0 text-white" />
+          </Link>
+
           <Card>
             <CardContainer>
               <CardTextBox>
@@ -68,7 +75,7 @@ export default async function Page({ params }: { params: Params }) {
 
           <Card variant="dark">
             <CardContainer>
-              <CardTextBox>
+              <CardTextBox variant="dark">
                 <h2 className="text-24-700">{`${team.name}について詳しく！`}</h2>
 
                 <div>

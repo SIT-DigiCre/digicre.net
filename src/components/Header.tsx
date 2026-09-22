@@ -1,6 +1,4 @@
 import { Icon } from "@iconify/react";
-import Link from "next/link";
-import { DigicreLogo } from "./Icon";
 import { LinkButton } from "./LinkButton";
 
 interface MenuItem {
@@ -59,10 +57,6 @@ export const Header = () => {
       </label>
 
       <div className="max-xl:peer-not-checked:hidden fixed top-0 left-0 z-0 overscroll-none bg-[#202020] min-inline-[320px] h-full overflow-y-auto consider-scrollbar px-4 py-[2rlh] flex flex-col gap-y-[2rlh]">
-        <Link href="/" className="mx-auto">
-          <DigicreLogo className="aspect-176/48 w-full h-[2rlh] shrink-0 text-white" />
-        </Link>
-
         <Menu
           title="デジクリについて"
           items={[

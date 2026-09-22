@@ -5,6 +5,7 @@ import { DigicreLogo } from "@/components/Icon";
 import { JoinUs } from "@/components/JoinUs";
 import parse from "html-react-parser";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { readFileSync } from "node:fs";
 import YAML from "yaml";
 import { Card, CardContainer, CardTextBox } from "../components/Card";
@@ -65,7 +66,9 @@ export default function Home() {
 
       <main className="bg-digicre-skyblue">
         <div className="flex py-16 px-8 flex-col gap-16 max-w-240 min-w-[320px] mx-auto">
-          <DigicreLogo className="aspect-176/48 w-full h-[2rlh] shrink-0 text-white" />
+          <Link href="/" className="mx-auto">
+            <DigicreLogo className="aspect-176/48 w-full h-[2rlh] shrink-0 text-white" />
+          </Link>
 
           <Card id="about-us">
             <YouTube videoId="vM_Dmc5WLxs" />
@@ -81,10 +84,12 @@ export default function Home() {
 
           <Card variant="dark" id="news">
             <CardContainer>
-              <CardTextBox>
+              <CardTextBox variant="dark">
                 <h2 className="text-24-700">お知らせ</h2>
 
-                <div></div>
+                <div>
+                  <p>イベントへの出展情報などを載せています。</p>
+                </div>
               </CardTextBox>
             </CardContainer>
           </Card>
@@ -132,7 +137,7 @@ export default function Home() {
 
           <Card variant="dark" id="faq">
             <CardContainer>
-              <CardTextBox>
+              <CardTextBox variant="dark">
                 <h2 className="text-24-700">よくある質問</h2>
 
                 <div>

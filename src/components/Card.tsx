@@ -35,11 +35,20 @@ export const CardContainer: React.FC<CardContainerProps> = ({ children }) => {
 
 interface CardTextBoxProps {
   children: ReactNode;
+  variant?: "light" | "dark";
 }
 
-export const CardTextBox: React.FC<CardTextBoxProps> = ({ children }) => {
+export const CardTextBox: React.FC<CardTextBoxProps> = ({
+  children,
+  variant = "light",
+}) => {
+  const borderClass =
+    variant === "dark" ? "border-digicre-black" : "border-digicre-skyblue";
+
   return (
-    <div className="flex flex-col items-start gap-y-[1rlh] pl-4 self-stretch border-l-4 border-digicre-skyblue">
+    <div
+      className={`flex flex-col items-start gap-y-[1rlh] pl-4 self-stretch border-l-4 ${borderClass}`}
+    >
       {children}
     </div>
   );
