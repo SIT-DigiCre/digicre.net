@@ -10,10 +10,10 @@
       <p>他にもデジクリを支える「デジコア」や「Bolide」などのシステム開発もしています。</p>
     works:
       - title: ゲーム制作企画
-        image: /assets/images/works_pg_01.png
+        image: /assets/images/works_pg_1.webp
         href: null
       - title: PGおもちゃ企画
-        image: /assets/images/works_pg_02.jpg
+        image: /assets/images/works_pg_2.webp
         href: null
   learn_more:
     - title: タイトル
@@ -31,10 +31,10 @@
       <p>テーマに合わせたイラストをみんなで書いて合同誌にする「デジクリイラスト合同誌企画」やみんなで模写をする「模写会企画」などがあります。</p>
     works:
       - title: 模写会企画
-        image: foo.png
+        image: /assets/images/works_2dcg_1.webp
         href: null
       - title: 合同誌企画
-        image: foo.png
+        image: /assets/images/works_2dcg_2.webp
         href: null
   learn_more:
     - title: タイトル
@@ -52,7 +52,7 @@
       <p>各々のやり方で各々の作りたい人を作る「3DCGで人を創ろう」などの企画をしています。</p>
     works:
       - title: 3DCGで人を創ろう企画
-        image: foo.png
+        image: /assets/images/works_3dcg_1.webp
         href: null
   learn_more:
     - title: タイトル
@@ -70,13 +70,13 @@
       <p>複数人で既存の曲をアレンジしたものをリレー形式でつないでいく「アレンジリレー企画」やみんなで曲を作ってアルバムにして販売する「アルバム企画」、24時間以内の限られた時間で楽曲を制作する「n時間DTM企画」などがあります。</p>
     works:
       - title: アレンジリレー企画
-        image: foo.png
+        image: /assets/images/works_dtm_1.webp
         href: null
       - title: n時間DTM企画
-        image: foo.png
+        image: /assets/images/works_dtm_2.webp
         href: null
       - title: アルバム企画
-        image: foo.png
+        image: /assets/images/works_dtm_3.webp
         href: null
   learn_more:
     - title: タイトル
@@ -93,10 +93,10 @@
       <p></p>
     works:
       - title: MV制作企画
-        image: foo.png
+        image: /assets/images/works_movie_1.webp
         href: null
       - title: n時間Movie企画
-        image: foo.png
+        image: /assets/images/works_movie_2.webp
         href: null
   learn_more:
     - title: タイトル
@@ -112,8 +112,8 @@
     content: |
       <p>公式YouTubeチャンネル「デジクリVTuberチャンネル」での動画や生放送でのゲーム実況などをしています。</p>
     works:
-      - title:
-        image: foo.png
+      - title: YouTube
+        image: /assets/images/works_vtuber_1.webp
         href: null
   learn_more:
     - title: タイトル
@@ -130,7 +130,7 @@
       <p>ゲームのシナリオを書いていたり、TRPGのシナリオを書いたり、個人で物語を書いたりしています。</p>
     works:
       - title: Advent Calendar企画
-        image: foo.png
+        image: /assets/images/works_writing_1.webp
         href: null
   learn_more:
     - title: タイトル

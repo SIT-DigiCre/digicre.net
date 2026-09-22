@@ -9,13 +9,13 @@ activity:
     <p>大宮祭や芝浦祭といった学内の文化祭への出展はもちろん、コミックマーケットやM3といった外部イベントにも数多く参加しています。</p>
   examples:
     - title: 普段の様子
-      image: foo.png
+      image: /assets/images/activities_1.webp
       href: null
     - title: 合宿
-      image: foo.png
+      image: /assets/images/activities_2.webp
       href: null
     - title: イベント出展
-      image: foo.png
+      image: /assets/images/activities_3.webp
       href: null
 team:
   content: |
@@ -23,25 +23,25 @@ team:
     <p>同じ班のデジクリ部員同士で交流するだけでなく、ときには複数の班でコラポレーションして作品を制作することもあります。</p>
   teams:
     - title: PG班
-      image: pg.png
+      image: /assets/images/teams_pg.webp
       href: /about/pg/
     - title: イラスト班
-      image: 2dcg.png
+      image: /assets/images/teams_2dcg.webp
       href: /about/2dcg/
     - title: 3DCG班
-      image: 3dcg.png
+      image: /assets/images/teams_3dcg.webp
       href: /about/3dcg/
     - title: DTM班
-      image: dtm.png
+      image: /assets/images/teams_dtm.webp
       href: /about/dtm/
     - title: Movie班
-      image: movie.png
+      image: /assets/images/teams_movie.webp
       href: /about/movie/
     - title: VTuber班
-      image: vtuber.png
+      image: /assets/images/teams_vtuber.webp
       href: /about/vtuber/
     - title: 文字書き班
-      image: writing.png
+      image: /assets/images/teams_writing.webp
       href: /about/writing/
 learn_more:
   - title: 費用はいくらですか？
