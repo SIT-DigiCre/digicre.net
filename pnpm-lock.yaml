@@ -19,7 +19,7 @@ importers:
         version: 6.0.2(react@19.3.0)
       '@next/third-parties':
         specifier: 16.3.5
-        version: 16.3.5(next@16.3.5(@types/node@25.9.7)(react-dom@19.2.8(react@19.3.0))(react@19.3.0))(react@19.3.0)
+        version: 16.3.5(next@16.3.5(@types/node@25.9.8)(react-dom@19.2.8(react@19.3.0))(react@19.3.0))(react@19.3.0)
       '@splidejs/react-splide':
         specifier: 0.7.12
         version: 0.7.12
@@ -31,7 +31,7 @@ importers:
         version: 10.6.1(postcss@8.5.28)
       next:
         specifier: 16.3.5
-        version: 16.3.5(@types/node@25.9.7)(react-dom@19.2.8(react@19.3.0))(react@19.3.0)
+        version: 16.3.5(@types/node@25.9.8)(react-dom@19.2.8(react@19.3.0))(react@19.3.0)
       postcss:
         specifier: 8.5.28
         version: 8.5.28
@@ -55,8 +55,8 @@ importers:
         specifier: 4.3.3
         version: 4.3.3
       '@types/node':
-        specifier: 25.9.7
-        version: 25.9.7
+        specifier: 25.9.8
+        version: 25.9.8
       '@types/react':
         specifier: 19.3.0
         version: 19.3.0
@@ -508,8 +508,8 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
-  '@types/node@25.9.7':
-    resolution: {integrity: sha512-Y+axoNWOFLvDNFxNbDA+kqqV05imHwTu5bZWWO6tQM3Y2NX1jvzUJkYlf4nYnMCnvu4wQBKW6Nr+ok6yHWA9aQ==}
+  '@types/node@25.9.8':
+    resolution: {integrity: sha512-VfMrScDmMhUJQmd5hArdQnFvK0OIeD36uN2Va1FcpYaLB/BgkgM8Ulc50XtYISPMz7APJ30+N0T5EM0jlcdfRw==}
 
   '@types/react-dom@19.2.7':
     resolution: {integrity: sha512-I8bPpDLcHBv1qiIiXDCy71Rt8eQDKJP0sMSWJphDdAcdqiJ1sGpZamavoEIRZmYzjia9LuEb2HlYdDpmoENpvQ==}
@@ -1222,9 +1222,9 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.3.5':
     optional: true
 
-  '@next/third-parties@16.3.5(next@16.3.5(@types/node@25.9.7)(react-dom@19.2.8(react@19.3.0))(react@19.3.0))(react@19.3.0)':
+  '@next/third-parties@16.3.5(next@16.3.5(@types/node@25.9.8)(react-dom@19.2.8(react@19.3.0))(react@19.3.0))(react@19.3.0)':
     dependencies:
-      next: 16.3.5(@types/node@25.9.7)(react-dom@19.2.8(react@19.3.0))(react@19.3.0)
+      next: 16.3.5(@types/node@25.9.8)(react-dom@19.2.8(react@19.3.0))(react@19.3.0)
       react: 19.3.0
       third-party-capital: 1.0.20
 
@@ -1331,7 +1331,7 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@25.9.7':
+  '@types/node@25.9.8':
     dependencies:
       undici-types: 7.24.6
 
@@ -1752,7 +1752,7 @@ snapshots:
 
   native-promise-only@0.8.1: {}
 
-  next@16.3.5(@types/node@25.9.7)(react-dom@19.2.8(react@19.3.0))(react@19.3.0):
+  next@16.3.5(@types/node@25.9.8)(react-dom@19.2.8(react@19.3.0))(react@19.3.0):
     dependencies:
       '@next/env': 16.3.5
       '@swc/helpers': 0.5.23
@@ -1771,7 +1771,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 16.3.5
       '@next/swc-win32-arm64-msvc': 16.3.5
       '@next/swc-win32-x64-msvc': 16.3.5
-      sharp: 0.35.4(@types/node@25.9.7)
+      sharp: 0.35.4(@types/node@25.9.8)
     transitivePeerDependencies:
       - '@babel/core'
       - '@types/node'
@@ -1854,7 +1854,7 @@ snapshots:
   semver@7.8.5:
     optional: true
 
-  sharp@0.35.4(@types/node@25.9.7):
+  sharp@0.35.4(@types/node@25.9.8):
     dependencies:
       '@img/colour': 1.1.0
       detect-libc: 2.1.2
@@ -1885,7 +1885,7 @@ snapshots:
       '@img/sharp-win32-arm64': 0.35.4
       '@img/sharp-win32-ia32': 0.35.4
       '@img/sharp-win32-x64': 0.35.4
-      '@types/node': 25.9.7
+      '@types/node': 25.9.8
     optional: true
 
   source-map-js@1.2.1: {}
