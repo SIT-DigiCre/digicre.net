@@ -3,17 +3,15 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { DigicreLogo } from "@/components/Icon";
 import { JoinUs } from "@/components/JoinUs";
-import parse from "html-react-parser";
+import { Markdown } from "@/components/Markdown";
+import readYaml from "@/utilities/readYaml";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { readFileSync } from "node:fs";
-import YAML from "yaml";
 import { Card, CardContainer, CardTextBox } from "../components/Card";
 import { FaqItem, FaqList } from "../components/Faq";
 import YouTube from "../components/YouTube";
 
-const rawPageContent = readFileSync("./src/data/home.yaml", "utf-8");
-const pageContent = YAML.parse(rawPageContent) as PageContent;
+const pageContent = readYaml("./src/data/home.yaml") as PageContent;
 
 export const metadata: Metadata = {
   alternates: {
@@ -77,7 +75,7 @@ export default function Home() {
               <CardTextBox>
                 <h2 className="text-24-700">デジクリとは？</h2>
 
-                <div>{parse(pageContent.about.content)}</div>
+                <Markdown content={pageContent.about.content} />
               </CardTextBox>
             </CardContainer>
           </Card>
@@ -99,7 +97,7 @@ export default function Home() {
               <CardTextBox>
                 <h2 className="text-24-700">主な活動</h2>
 
-                <div>{parse(pageContent.activity.content)}</div>
+                <Markdown content={pageContent.activity.content} />
               </CardTextBox>
 
               <FigureList>
@@ -119,7 +117,7 @@ export default function Home() {
               <CardTextBox>
                 <h2 className="text-24-700">班紹介</h2>
 
-                <div>{parse(pageContent.team.content)}</div>
+                <Markdown content={pageContent.team.content} />
               </CardTextBox>
 
               <FigureList>
@@ -150,7 +148,7 @@ export default function Home() {
               <FaqList>
                 {pageContent.learn_more.map((item, index) => (
                   <FaqItem question={item.title} key={index}>
-                    {parse(item.content)}
+                    <Markdown content={item.content} />
                   </FaqItem>
                 ))}
               </FaqList>

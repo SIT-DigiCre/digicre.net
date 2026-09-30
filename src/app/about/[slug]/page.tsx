@@ -5,12 +5,11 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { DigicreLogo } from "@/components/Icon";
 import { JoinUs } from "@/components/JoinUs";
+import { Markdown } from "@/components/Markdown";
 import type { Team } from "@/data/team";
-import parse from "html-react-parser";
+import readYaml from "@/utilities/readYaml";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { readFileSync } from "node:fs";
-import YAML from "yaml";
 
 export const metadata: Metadata = {
   alternates: {
@@ -22,8 +21,7 @@ type Params = {
   slug: string;
 };
 
-const rawTeams = readFileSync("./src/data/teams.yaml", "utf-8");
-const teams = YAML.parse(rawTeams) as Team[];
+const teams = readYaml("./src/data/teams.yaml") as Team[];
 
 export async function generateStaticParams() {
   return teams.map(({ id }) => ({ slug: id }));
@@ -48,7 +46,7 @@ export default async function Page({ params }: { params: Params }) {
               <CardTextBox>
                 <h2 className="text-24-700">{`${team.name}とは？`}</h2>
 
-                <div>{parse(team.about.content)}</div>
+                <Markdown content={team.about.content} />
               </CardTextBox>
             </CardContainer>
           </Card>
@@ -58,7 +56,7 @@ export default async function Page({ params }: { params: Params }) {
               <CardTextBox>
                 <h2 className="text-24-700">{`${team.name}の主な活動`}</h2>
 
-                <div>{parse(team.activity.content)}</div>
+                <Markdown content={team.activity.content} />
               </CardTextBox>
 
               <FigureList>
@@ -88,7 +86,7 @@ export default async function Page({ params }: { params: Params }) {
               <FaqList>
                 {team.learn_more.map((item, index) => (
                   <FaqItem question={item.title} key={index}>
-                    {parse(item.content)}
+                    <Markdown content={item.content} />
                   </FaqItem>
                 ))}
               </FaqList>

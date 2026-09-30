@@ -13,6 +13,7 @@
   html {
     line-height: 2;
     scroll-behavior: smooth;
+    text-autospace: normal;
   }
 }
 
@@ -43,5 +44,79 @@
 
   .consider-scrollbar {
     scrollbar-gutter: stable;
+  }
+
+  .markdown {
+    :first-child {
+      margin-block-start: 0;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 2rem;
+    }
+
+    p {
+      margin-block-start: 1rlh;
+    }
+
+    a:any-link {
+      color: var(--color-blue);
+      text-decoration: underline;
+    }
+
+    ul,
+    ol {
+      margin-inline-start: 2rem;
+      margin-block-start: 1rlh;
+    }
+
+    ul li {
+      list-style: disc;
+    }
+
+    ol li {
+      list-style: decimal;
+    }
+
+    figure {
+      margin-block-start: 1rlh;
+
+      &:has(table) {
+        overflow-x: auto;
+      }
+    }
+
+    table {
+      margin-inline: auto;
+      text-wrap: nowrap;
+      font-variant-numeric: tabular-nums;
+
+      thead {
+        tr {
+          background: #fff;
+        }
+
+        th {
+          text-align: center;
+          padding-inline: 1rem;
+        }
+      }
+
+      tbody {
+        tr {
+          background: #e0e0e0;
+
+          &:nth-child(2n) {
+            background: #fff;
+          }
+        }
+
+        td {
+          padding-inline: 1rem;
+        }
+      }
+    }
   }
 }
