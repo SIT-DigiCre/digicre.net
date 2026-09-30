@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Card, CardContainer, CardTextBox } from "../components/Card";
 import { FaqItem, FaqList } from "../components/Faq";
-import YouTube from "../components/YouTube";
+import { YouTube } from "../components/YouTube";
 
 const pageContent = readYaml("./src/data/home.yaml") as PageContent;
 

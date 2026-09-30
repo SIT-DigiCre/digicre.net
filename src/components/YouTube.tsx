@@ -7,7 +7,10 @@ interface Props {
   height?: string | number;
 }
 
-const YouTube: React.FC<Props> = ({ videoId, title = "YouTube video" }) => {
+export const YouTube: React.FC<Props> = ({
+  videoId,
+  title = "YouTube video",
+}) => {
   const options = new URLSearchParams({
     disablekb: "1",
     loop: "1",
@@ -23,9 +26,7 @@ const YouTube: React.FC<Props> = ({ videoId, title = "YouTube video" }) => {
       title={title}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
-      className="aspect-video"
+      className="aspect-video bg-digicre-black"
     />
   );
 };
-
-export default YouTube;
