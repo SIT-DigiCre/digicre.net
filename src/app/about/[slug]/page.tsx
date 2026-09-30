@@ -21,21 +21,24 @@ type Params = {
   slug: string;
 };
 
-const teams = readYaml("./src/data/teams.yaml") as Team[];
+const YAML_PATH = "./src/data/teams.yaml" as const;
 
 export async function generateStaticParams() {
+  const teams = readYaml(YAML_PATH) as Team[];
+
   return teams.map(({ id }) => ({ slug: id }));
 }
 
 export default async function Page({ params }: { params: Params }) {
   const { slug } = await params;
+  const teams = readYaml(YAML_PATH) as Team[];
   const team = teams.filter((t) => slug === t.id)[0];
 
   return (
     <>
       <Header />
 
-      <main className="bg-digicre-skyblue">
+      <main className="bg-digicre-skyblue ">
         <div className="flex py-16 px-8 flex-col gap-16 max-w-240 min-w-[320px] mx-auto">
           <Link href="/" className="mx-auto">
             <DigicreLogo className="aspect-176/48 w-full h-[2rlh] shrink-0 text-white" />
