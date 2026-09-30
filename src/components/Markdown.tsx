@@ -9,17 +9,17 @@ interface MarkdownProps {
 
 export const Markdown: React.FC<MarkdownProps> = ({ content }) => {
   const renderer = new Renderer();
-  renderer.link = (tokens: Tokens.Link) => {
-    const { href, text } = tokens;
-    const isExternalLink = !href.startsWith("/");
-    const target = isExternalLink
-      ? ` target="_blank" rel="noopener noreferrer"`
-      : "";
-
-    return `<a href="${href}"${target}>${text}</a>`;
-  };
   const marked = new Marked({
     renderer: {
+      link(tokens: Tokens.Link) {
+        const { href, text } = tokens;
+        const isExternalLink = !href.startsWith("/");
+        const target = isExternalLink
+          ? ` target="_blank" rel="noopener noreferrer"`
+          : "";
+
+        return `<a href="${href}"${target}>${text}</a>`;
+      },
       table(...args) {
         return `<figure>${renderer.table.apply(this, args)}</figure>`;
       },
