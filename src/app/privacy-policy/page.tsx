@@ -1,11 +1,11 @@
+import type { Metadata } from "next";
+import Link from "next/link";
 import { Card, CardContainer, CardTextBox } from "@/components/Card";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { DigicreLogo } from "@/components/Icon";
 import { Markdown } from "@/components/Markdown";
 import readYaml from "@/utilities/readYaml";
-import type { Metadata } from "next";
-import Link from "next/link";
 
 const YAML_PATH = "./src/data/privacy-policy.yaml" as const;
 

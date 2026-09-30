@@ -1,7 +1,7 @@
-import type { Team } from "@/data/team";
-import type { MetadataRoute } from "next";
 import { readFileSync } from "node:fs";
+import type { MetadataRoute } from "next";
 import YAML from "yaml";
+import type { Team } from "@/data/team";
 
 export const dynamic = "force-static";
 

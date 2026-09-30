@@ -1,4 +1,7 @@
+"use client";
+
 import { Icon } from "@iconify/react";
+import { useState } from "react";
 import { LinkButton } from "./LinkButton";
 
 interface MenuItem {
@@ -32,31 +35,28 @@ const Menu: React.FC<MenuProps> = ({ title, items }) => {
 };
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header>
-      <input type="checkbox" id="header-toggle" className="peer hidden" />
-
-      <label
-        htmlFor="header-toggle"
-        className="peer-checked:hidden xl:hidden fixed top-0 left-0 z-1 bg-[#00b0f0] p-[16px] rounded-br-[16px] shadow-[2px_2px_8px_0_rgba(32_32_32/75%)]"
+      <button
+        type="button"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className="xl:hidden fixed top-0 left-0 z-2 bg-[#404040] p-4 border-b-2 border-r-2 border-[#808080] rounded-br-2xl shadow-[2px_2px_8px_0_rgba(32_32_32/75%)] hover:cursor-pointer"
       >
         <Icon
-          icon="material-symbols:menu-rounded"
-          className="w-[32px] h-[32px] text-[#fff]"
+          icon={
+            isMenuOpen
+              ? "material-symbols:close-rounded"
+              : "material-symbols:menu-rounded"
+          }
+          className="w-8 h-8 text-digicre-white"
         />
-      </label>
+      </button>
 
-      <label
-        htmlFor="header-toggle"
-        className="peer-not-checked:hidden xl:hidden fixed top-0 left-0 z-1 bg-[#FF4B00] p-[16px] rounded-br-[16px] shadow-[2px_2px_8px_0_rgba(32_32_32_/_75%)]"
+      <div
+        className={`${isMenuOpen ? "flex" : "hidden"} fixed top-0 left-0 z-1 overscroll-none bg-digicre-black w-full xl:w-[320px] h-full overflow-y-auto consider-scrollbar px-4 py-[2rlh] xl:flex flex-col gap-y-[2rlh]`}
       >
-        <Icon
-          icon="material-symbols:close-rounded"
-          className="w-[32px] h-[32px] text-[#fff]"
-        />
-      </label>
-
-      <div className="max-xl:peer-not-checked:hidden fixed top-0 left-0 z-2 overscroll-none bg-[#202020] min-inline-[320px] h-full overflow-y-auto consider-scrollbar px-4 py-[2rlh] flex flex-col gap-y-[2rlh]">
         <Menu
           title="デジクリについて"
           items={[
@@ -85,7 +85,7 @@ export const Header = () => {
               href: "mailto:contact@digicre.net",
             },
           ]}
-        ></Menu>
+        />
 
         <Menu
           title="公式アカウント"
@@ -111,7 +111,7 @@ export const Header = () => {
               href: "https://digicre.booth.pm/",
             },
           ]}
-        ></Menu>
+        />
 
         <Menu
           title="関連サイト"
@@ -121,7 +121,7 @@ export const Header = () => {
               href: "https://www.shibaura-it.ac.jp/",
             },
           ]}
-        ></Menu>
+        />
 
         <Menu
           title="デジクリ部員向け"
@@ -131,7 +131,7 @@ export const Header = () => {
               href: "https://core3.digicre.net/",
             },
           ]}
-        ></Menu>
+        />
       </div>
     </header>
   );

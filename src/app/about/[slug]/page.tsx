@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import Link from "next/link";
 import { Card, CardContainer, CardTextBox } from "@/components/Card";
 import { FaqItem, FaqList } from "@/components/Faq";
 import { FigureItem, FigureList } from "@/components/Figure";
@@ -8,8 +10,6 @@ import { JoinUs } from "@/components/JoinUs";
 import { Markdown } from "@/components/Markdown";
 import type { Team } from "@/data/team";
 import readYaml from "@/utilities/readYaml";
-import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: {
