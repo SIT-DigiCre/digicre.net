@@ -106,6 +106,10 @@ export const Header = () => {
               title: "GitHub",
               href: "https://github.com/SIT-DigiCre",
             },
+            {
+              title: "booth",
+              href: "https://digicre.booth.pm/",
+            },
           ]}
         ></Menu>
 
