@@ -11,8 +11,6 @@ import { Card, CardContainer, CardTextBox } from "../components/Card";
 import { FaqItem, FaqList } from "../components/Faq";
 import { YouTube } from "../components/YouTube";
 
-const pageContent = readYaml("./src/data/home.yaml") as PageContent;
-
 export const metadata: Metadata = {
   alternates: {
     canonical: "https://digicre.net/",
@@ -58,6 +56,8 @@ type LearnMore = {
 };
 
 export default function Home() {
+  const page = readYaml("./src/data/home.yaml") as PageContent;
+
   return (
     <>
       <Header />
@@ -75,7 +75,7 @@ export default function Home() {
               <CardTextBox>
                 <h2 className="text-24-700">デジクリとは？</h2>
 
-                <Markdown content={pageContent.about.content} />
+                <Markdown content={page.about.content} />
               </CardTextBox>
             </CardContainer>
           </Card>
@@ -97,11 +97,11 @@ export default function Home() {
               <CardTextBox>
                 <h2 className="text-24-700">主な活動</h2>
 
-                <Markdown content={pageContent.activity.content} />
+                <Markdown content={page.activity.content} />
               </CardTextBox>
 
               <FigureList>
-                {pageContent.activity.examples.map((item, index) => (
+                {page.activity.examples.map((item, index) => (
                   <FigureItem
                     image={item.image}
                     title={item.title}
@@ -117,11 +117,11 @@ export default function Home() {
               <CardTextBox>
                 <h2 className="text-24-700">班紹介</h2>
 
-                <Markdown content={pageContent.team.content} />
+                <Markdown content={page.team.content} />
               </CardTextBox>
 
               <FigureList>
-                {pageContent.team.teams.map((item, index) => (
+                {page.team.teams.map((item, index) => (
                   <FigureItem
                     image={item.image}
                     title={item.title}
@@ -146,7 +146,7 @@ export default function Home() {
               </CardTextBox>
 
               <FaqList>
-                {pageContent.learn_more.map((item, index) => (
+                {page.learn_more.map((item, index) => (
                   <FaqItem question={item.title} key={index}>
                     <Markdown content={item.content} />
                   </FaqItem>
